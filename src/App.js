@@ -28,7 +28,19 @@ function App() {
     getBlockNumber();
   });
 
-  return <div className="App">Block Number: {blockNumber}</div>;
+  return (
+    <html>
+      <header>
+        <title>Ethereum Blockexplorer</title>
+      </header>
+      <body>
+        <div>
+          <div className="App-header">Ethereum Blockexplorer</div>
+          <div className="App">Block Number: {blockNumber}</div>
+        </div>
+      </body>
+    </html>
+  );
 }
 
 export default App;
